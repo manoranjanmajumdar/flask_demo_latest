@@ -15,6 +15,7 @@ RUN apt-get -y update && apt-get -y install nginx
 
 #Expose the port for access
 EXPOSE 80/tcp
+EXPOSE 8080
 
 #Run the Nginx server
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
